@@ -1,7 +1,7 @@
 ---
 title: Hello World!
 featuredImage: /images/uploads/isabella juskova.jpg
-subtitle: This is the home page subtitle. OR IS IT?
+subtitle: This is the home page subtitle. OR IS IT? WHERE THE DATA BE?
 meta:
   title: ""
 ---
