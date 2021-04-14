@@ -16,7 +16,6 @@
     "react-scripts": "^3.3.1",
     "sharp": "^0.23.0",
     "sitemap-static": "^0.4.4",
-    "snazzy": "^8.0.0",
     "sw-precache": "^5.2.0"
   },
   "dependencies": {
@@ -41,7 +40,8 @@
     "start:app": "react-scripts start",
     "start:content": "chokidar 'content/**/**' -c 'npm run prepare-content'",
     "start:cms": "chokidar 'cms/cms.js' -c 'cd cms && npm run build'",
-    "build": "npm-run-all -s prepare-content build:cms build:app build:postcss build:react-snapshot build:sitemap build:sw build:sha",
+    "build": "npm-run-all -s prepare-content build:cms build:app build:postcss build:react-snapshot build:sitemap build:sha",
+    "build-old": "npm-run-all -s prepare-content build:cms build:app build:postcss build:react-snapshot build:sitemap build:sw build:sha",
     "build:app": "react-scripts build",
     "build:cms": "cd cms && NODE_ENV=production npm run build",
     "build:postcss": "postcss build/static/css/*.css -r",
@@ -54,7 +54,6 @@
     "install:cms": "cd cms && npm i",
     "resize-images": "node ./functions/resize-images.js",
     "prepare-content": "npm-run-all -s parse-content resize-images",
-    "test": "standard | snazzy && react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "reactSnapshot": {
