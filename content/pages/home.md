@@ -1,9 +1,9 @@
 ---
 title: Hello World!
 featuredImage: /images/uploads/isabella juskova.jpg
-subtitle: This is the home page subtitle
+subtitle: This is the home page subtitle. OR IS IT
 meta:
-  title: ''
+  title: ""
 ---
 
 # Netlify CMS + React Starter
